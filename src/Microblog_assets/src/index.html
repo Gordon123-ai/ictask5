@@ -3,20 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Microblog</title>
+    <title>microblog</title>
     <base href="/" />
     <link rel="icon" href="favicon.ico" />
-    <link type="text/css" rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
   </head>
   <body>
+    <header><h1>This is the <label id="my_blog"></label>’ blog</h1>
+    </header>
     <main>
-      <img src="logo.png" alt="DFINITY logo" />
-      <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting"></section>
+      <label> My Name：</label><label id="author_name"></label><label> &nbsp;&nbsp;&nbsp; My blog CanisterID：</label> <label id="canisterid"></label>
+      <br>
+      <br>
+      <label for="message">Please enter the message you want to send</label>
+      <div>
+        <textarea id="message"></textarea>
+        <br>
+        <label>Secret</label><input id="pass"></input>
+        <br>
+        <button id="post">Post</button>
+      </div>
+      <h3>My Posts</h3>
+      <section id="posts"></section>
+      <h3>Following List</h3>
+      <section id="follows"></section>
+      <h3>Timeline <label id="blogName"></label></h3>
+      <section id="timeline"></section>
     </main>
   </body>
 </html>
